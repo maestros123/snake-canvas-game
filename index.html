@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<div class="controls">
+    <h3>Уровень сложности:</h3>
+    <div class="controls__level">
+        <input type="checkbox" class="level" id="easy" name="easy" checked>
+        <label for="easy">Уж</label>
+    </div>
+    <div class="controls__level">
+        <input type="checkbox" class="level" id="medium" name="medium">
+        <label for="medium">Гадюка</label>
+    </div>
+
+    <div class="controls__level">
+        <input type="checkbox" class="level" id="hard" name="hard">
+        <label for="hard">Кобра</label>
+    </div>
+
+    <div class="controls__colors">
+        <h3>Цветовая палитра:</h3>
+        <ul>
+            <li class="controls__color controls__color--active" id="green" style="background-color: #6ca270;"></li>
+            <li class="controls__color" id="yellow" style="background-color: #ffd966;"></li>
+            <li class="controls__color" id="orange" style="background-color: #ff8c00;"></li>
+            <li class="controls__color" id="red" style="background-color: #e74c3c;"></li>
+            <li class="controls__color" id="blue" style="background-color: #3498db;"></li>
+        </ul>
+    </div>
+
+
+    <div class="controls__buttons">
+        <button id="pause" class="pause-active">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                <rect x="8" y="6" width="3" height="12" fill="currentColor"/>
+                <rect x="13" y="6" width="3" height="12" fill="currentColor"/>
+            </svg>
+            Пауза
+        </button>
+        <button id="reset">
+            <svg fill="currentColor" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                <path d="M960 0v213.333c411.627 0 746.667 334.934 746.667 746.667S1371.627 1706.667 960 1706.667 213.333 1371.733 213.333 960c0-197.013 78.4-382.507 213.334-520.747v254.08H640V106.667H53.333V320h191.04C88.64 494.08 0 720.96 0 960c0 529.28 430.613 960 960 960s960-430.72 960-960S1489.387 0 960 0" fill-rule="evenodd"/>
+            </svg>
+            Заново
+        </button>
+    </div>
+
+</div>
+
+<div class="game">
+    <div id="game__text">Нажмите любую кнопку управления, чтобы начать игру</div>
+    <canvas id="canvas"></canvas>
+</div>
+
+<div class="info">
+    <div class="score">
+        <img src="src/images/star.png" alt="">
+        <p id="score">Текущий результат</p>
+    </div>
+    <div class="high-score">
+        <img src="src/images/high-score.png" alt="">
+        <p id="high-score">Лучший результат</p>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
