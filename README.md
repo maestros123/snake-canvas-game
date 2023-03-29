@@ -1,5 +1,5 @@
 # Змейка на canvas
-
+![Иллюстрация к проекту](https://stepan-pishchelev.ru/assets/images/portfolio-works/snake-game.jpg)
 Змейка написанная на js, с использованием canvas. 
 Лучшие результаты сохраняются в localStorage. 
 Размер canvas зависит от размера экрана пользователя на момент загрузки
